@@ -313,7 +313,7 @@
 \item \textbf{Serializable} — самый высокий уровень изоляции. Выполнение определяется как выполнение операций, в которых одновременно выполняемые транзакции кажутся последовательно выполняемыми\autocite{BeginningSQL}.
 \end{itemize}
 
-\begin{table}[]
+\begin{table}
 \begin{tabular}{l|l|l|l|l}
                  & Фантомное чтение         & Неповторяющееся чтение   & Грязное чтение           & Потерянное обновление    \\ \hline
 Serializable     & \cellcolor[HTML]{32CB00} & \cellcolor[HTML]{32CB00} & \cellcolor[HTML]{32CB00} & \cellcolor[HTML]{32CB00} \\ \hline
@@ -324,7 +324,7 @@ Read Uncommitted & \cellcolor[HTML]{FE0000} & \cellcolor[HTML]{FE0000} & \cellco
 \end{table}
 
 
-\paragraph{Методы сериализации транзакций} \\
+\paragraph{Методы сериализации транзакций} ~\\
 
 Делятся на три типа:
 \begin{itemize}
